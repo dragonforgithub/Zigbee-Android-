@@ -21,6 +21,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.AssetManager;
 import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.net.NetworkInfo.State;
 import android.os.Environment;
@@ -141,15 +142,25 @@ public class Util {
 	}
 
 	public static boolean isConnect(Context context){
+
 		ConnectivityManager manager = (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
-		//获取状态
-		State wifi = manager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState();
-		State mobile = manager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState();
-		State hipri = manager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE_HIPRI).getState();
-		//判断wifi已连接的条件
-		if(wifi == State.CONNECTED||wifi==State.CONNECTING
-				||mobile == State.CONNECTED||hipri == State.CONNECTED){
-			return true;
+		if(manager != null){
+			//获取状态
+			NetworkInfo networkinfo = manager.getActiveNetworkInfo();
+			if (networkinfo == null || !networkinfo.isAvailable()) {
+				return false;
+			}
+
+			if(networkinfo.getType()==ConnectivityManager.TYPE_WIFI){
+				//判断WIFI网
+				if(networkinfo.getState()==State.CONNECTED)
+					return true;
+			}else if(networkinfo.getType()==ConnectivityManager.TYPE_MOBILE) {
+				//判断3G网
+				if(networkinfo.getState()==State.CONNECTED)
+					return true;
+			}
+			return false;
 		}else{
 			return false;
 		}

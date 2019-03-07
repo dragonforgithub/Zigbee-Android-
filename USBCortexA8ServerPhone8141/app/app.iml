@@ -116,7 +116,7 @@
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: com.android.support:support-v4:19.1.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:E.\project\androidStudio\AndroidZigbee\USBCortexA8ServerPhone8141\app\libs\usbseriallibrary.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:E.\project\androidStudio\AndroidZigbee\USBCortexA8ServerPhone8141\app\libs\achartengine-1.0.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:E.\project\androidStudio\AndroidZigbee\Zigbee-Android-\USBCortexA8ServerPhone8141\app\libs\usbseriallibrary.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:E.\project\androidStudio\AndroidZigbee\Zigbee-Android-\USBCortexA8ServerPhone8141\app\libs\achartengine-1.0.0.jar:unspecified@jar" level="project" />
   </component>
 </module>
