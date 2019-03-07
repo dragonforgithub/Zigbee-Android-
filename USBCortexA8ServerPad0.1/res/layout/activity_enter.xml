@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/enter_huanjing_fl"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/first_bt_selector" 
+            android:layout_gravity="center|left"
+            android:layout_marginTop="40dp"
+            >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="环境采集"
+                android:textSize="8pt" 
+                android:textColor="#ffffff"/>
+
+        </FrameLayout>
+		
+        <FrameLayout
+            android:id="@+id/enter_yaokong_fl"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/first_bt_selector"
+            >
+
+            <TextView
+                android:id="@+id/kongtiao_relengzhuangtai_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="设备控制"
+                android:textColor="#ffffff"
+                android:textSize="8pt" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/enter_anfang_fl"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/first_bt_selector"
+            android:layout_gravity="center"
+            >
+			
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="安防监控"
+                android:textColor="#ffffff"
+                android:textSize="8pt" />
+				
+        </FrameLayout>
+        <!-- <FrameLayout
+            android:id="@+id/wendu_bt"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+             android:layout_gravity="center|right"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/first_bt_selector"
+            android:layout_marginRight="100dp">
+			
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="温度播报"
+                android:textColor="#ffffff"
+                android:textSize="8pt" />
+
+        </FrameLayout> -->
+        
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="203dp"
+        android:layout_height="50dp"
+        android:background="@drawable/main_every_bg"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/enter_titlt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="智能家居控制系统"
+            android:textColor="#ffffff"
+            android:textSize="10pt" />
+    </FrameLayout>
+    
+</FrameLayout>

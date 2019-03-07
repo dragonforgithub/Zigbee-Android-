@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="DVD遥控"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="481dp"
+            android:layout_gravity="top"
+            android:background="@drawable/yaokong_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_kaiguan_ib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/kongtiao_switch_bt_selector" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_jinchucang_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="进出仓" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_zhuye_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="主页面" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_menu_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="菜单"
+                        android:textSize="10pt" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_xuanxiang_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="选项"
+                        android:textSize="10pt" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg"
+                    android:orientation="vertical"  >
+
+                    <Button
+                        android:id="@+id/dvd_shang_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="上"
+                        android:textSize="10pt" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp" >
+
+                        <Button
+                            android:id="@+id/dvd_zuo_bt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="10pt"
+                            android:background="@drawable/yaokong_bt_selector"
+                            android:text="左" />
+
+                        <Button
+                            android:id="@+id/dvd_you_bt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="10pt"
+                            android:background="@drawable/yaokong_bt_selector"
+                            android:text="右" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/dvd_xia_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="60dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="下"
+                        android:textSize="10pt" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                 >
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_ok_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="OK" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_stop_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="停止" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_play_zanting_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="8pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:layout_gravity="center"
+                        android:text="播放/暂停" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_shangyiqu_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="上一曲"
+                        android:textSize="10pt" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_quanping_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="全屏"
+                        android:textSize="10pt" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_xiayiqu_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="下一曲"
+                        android:textSize="8pt" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_back_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="返回" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_zimu_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="字幕" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_tiaozhuan_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="跳转" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_yinpin_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="音频" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_yinliang_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="音量" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dvd_chongfu_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="重复" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

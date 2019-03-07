@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.click369.cortex"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:launchMode="singleTop"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.click369.cortex.activity.LoginActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.click369.cortex.activity.RegActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+            
+           ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.DianShiActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+           ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.DianJiActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+           ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.DianJiOfChuanLianActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+           ></activity>
+        
+        <activity 
+            android:name="com.click369.cortex.activity.AnFangActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+           ></activity>
+        
+        <activity 
+            android:name="com.click369.cortex.activity.HongWaiBaoJingActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+           ></activity>
+        <activity   
+            android:name="com.click369.cortex.activity.JinJiHuJiaoBaoJingActivity"
+             android:theme="@android:style/Theme.Black.NoTitleBar" 
+             android:screenOrientation="portrait"
+            />
+        <activity 
+            android:name="com.click369.cortex.activity.MenJinActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+           ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.DVDActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+           ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.YinXiangActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+           ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.ChuangLianActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+           ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.KaiGuanLiangKongZhiActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+           ></activity>
+         <activity 
+            android:name="com.click369.cortex.activity.KaiGuanLiangKongZhiQDActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+           ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.EnterActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+           ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.ChoiceBoxActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+           ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.DataShowActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.JianKongActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.YaoKongActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.WenDuActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+            ></activity>
+
+        <activity 
+            android:name="com.click369.cortex.activity.GuangZhaoActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.ShiDuActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.CO2Activity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="portrait"
+            />
+        <activity 
+            android:name="com.click369.cortex.activity.JiaQuanActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="portrait"
+            />
+        
+        <activity 
+            android:name="com.click369.cortex.activity.QiTiActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.KongTiaoActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.AutoActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity 
+            android:name="com.click369.cortex.activity.KaiGuanlLiangCaiJiActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+            ></activity>
+         <activity 
+            android:name="com.click369.cortex.activity.IRKongZhiActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:screenOrientation="portrait"
+            ></activity>
+        
+        <service android:name="com.click369.cortex.service.MainWifiService"/>
+        <service android:name="com.click369.cortex.service.HongWaiService"/>
+        <service android:name="com.click369.cortex.service.DengGuangService"/>
+        <service android:name="com.click369.cortex.service.ChuangLianService"/>
+    </application>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+</manifest>

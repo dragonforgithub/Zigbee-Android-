@@ -1,0 +1,179 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg"
+    tools:context=".StartActivity" >
+	
+    <com.click369.cortex.activity.MyScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        >
+		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+			
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/main_bg_red" >
+				
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" 
+                    android:text="温度传感器"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="8pt" />
+					
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal" 
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/wendu_addr_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网内地址：" 
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:id="@+id/wendu_netNum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="网络号："
+                    android:textSize="6pt" />
+
+                <TextView
+                    android:id="@+id/wendu_singelNum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="信道号："
+                    android:textSize="6pt" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wendu_urlfail_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="网络请求失败点击重新请求"
+                android:textSize="6pt" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/main_every_bg" >
+
+                <TextView
+                    android:id="@+id/wendu_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="当前温度："
+                    android:textColor="#ffffff"
+                    android:textSize="7pt" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="25dp" >
+
+                    <ProgressBar
+                        android:id="@+id/pb"
+                        style="@style/progressBar_vertical"
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:max="100" />
+
+                    <ImageView
+                        android:id="@+id/wendu_imageView"
+                        android:layout_width="49dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/thermometer_01" />
+																																								
+                </FrameLayout>
+            </FrameLayout>
+			
+            <LinearLayout
+                android:id="@+id/wendu_line_ll"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/main_every_bg"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/main_every_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:background="@drawable/tablebg">
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="-3dp"
+                        android:layout_weight="1"  >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="时间"
+                            android:textColor="#ffffff" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="-3dp"
+                        android:layout_weight="1" >
+				
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="温度"
+                            android:textColor="#ffffff" />
+                    </FrameLayout>
+                </LinearLayout>
+				
+                <ListView
+                    android:id="@+id/wendu_listView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </ListView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.click369.cortex.activity.MyScrollView>
+
+</FrameLayout>

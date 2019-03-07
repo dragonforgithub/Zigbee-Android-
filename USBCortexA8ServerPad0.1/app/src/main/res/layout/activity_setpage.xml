@@ -1,0 +1,157 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg"
+    tools:context=".FirstPageActivity" >
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+         <FrameLayout
+	        android:layout_width="200dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="5dp"
+	         
+	         >
+	        <TextView
+	            android:id="@+id/tv_msg"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="网络通讯配置"
+	            android:textSize="8pt"
+	            android:textColor="#ffffff"
+	            
+             />
+	         </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/main_every_bg" >
+			<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:text="" 
+                    android:layout_marginTop="10dp"
+                    />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center" >
+
+				<Button
+                    android:id="@+id/set_xx_bluetooth_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bt_selector"
+                    android:text="蓝牙网络" 
+                    android:layout_alignParentLeft="true"
+                    android:visibility="gone"
+                    />
+				
+				 <Button
+                     android:id="@+id/set_xx_zigbee_btn"
+                     android:layout_width="110dp"
+                     android:layout_height="50dp"
+                     android:layout_centerInParent="true"
+                     android:background="@drawable/bt_selector"
+                     android:text="ZigBee网络" />
+				 
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp" 
+            android:layout_marginRight="100dp"
+            android:background="@drawable/main_every_bg" 
+           android:visibility="gone" 
+           >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="8pt"
+                    android:textColor="#ffffff"
+                    android:text="上行通道设置" 
+                    android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                 android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center" >
+				  
+                    <Button
+                        android:id="@+id/set_sx_wifi_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/bt_selector"
+                        android:layout_alignParentLeft="true"
+                        
+                        android:text="wifi网络" />
+
+                    <Button
+                        android:id="@+id/set_sx_3g_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        
+                        android:background="@drawable/bt_selector"
+                        android:layout_centerHorizontal="true"
+                        android:text="3G网络" />
+
+                    <Button
+                        android:id="@+id/set_sx_yt_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bt_selector"
+                        android:text="以太网" />
+ 
+            </RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="3dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/setpage_jinru_btn"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bt_selector"
+            android:text="进入" />
+
+		<Button
+		    android:id="@+id/setpage_back_btn"
+		    android:layout_width="100dp"
+		    android:layout_height="45dp"
+		    android:layout_marginTop="20dp"
+		    android:background="@drawable/bt_selector"
+		    android:text="返回" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="电视遥控"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="481dp"
+            android:layout_gravity="top"
+            android:background="@drawable/yaokong_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+                    <!-- 开关 -->
+                    <Button
+                        android:id="@+id/dianshi_switch_ib"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/kongtiao_switch_bt_selector" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_jingyin_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="静音" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_suofang_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="缩放" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="频道"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="7pt" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp" >
+
+                        <Button
+                            android:id="@+id/dianshi_pindao_add_bt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="10pt"
+                            android:background="@drawable/yaokong_bt_selector"
+                            android:text="+" />
+
+                        <Button
+                            android:id="@+id/dianshi_pindao_min_bt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="10pt"
+                            android:background="@drawable/yaokong_bt_selector"
+                            android:text="-" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="音量"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="7pt" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="2dp" >
+
+                        <Button
+                            android:id="@+id/dianshi_yinliang_add_bt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="10pt"
+                            android:background="@drawable/yaokong_bt_selector"
+                            android:text="+" />
+
+                        <Button
+                            android:id="@+id/dianshi_yinliang_min_bt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textSize="10pt"
+                            android:background="@drawable/yaokong_bt_selector"
+                            android:text="-" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+           <!--  
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" >
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_menu_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="菜单" />
+                </FrameLayout>
+            </LinearLayout>
+             -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_0_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="0" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_3d_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="3D" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_quanping_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:layout_gravity="center"
+                        android:text="全屏" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_1_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="1" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_2_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="2" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_3_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="3" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_4_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="4" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_5_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="5" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_6_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="6" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_7_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="7" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_8_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="8" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_9_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="9" />
+                </FrameLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_shengying_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="8pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="声音模式" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_top_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/dianshi_bt_top"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_picture_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:textSize="8pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="图像模式" />
+                </FrameLayout>
+            </LinearLayout>
+            
+               <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_left_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/dianshi_bt_left" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_queding_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="确定" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_right_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:textSize="10pt"
+                        android:background="@drawable/dianshi_bt_right" />
+                </FrameLayout>
+            </LinearLayout>
+            
+                    
+              <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" >
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_menu_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="菜单" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_bottom_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="10pt"
+                        android:background="@drawable/dianshi_bt_bottom"
+                        android:text="" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/FrameLayout15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_every_bg" >
+
+                    <Button
+                        android:id="@+id/dianshi_xinyuan_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:textSize="10pt"
+                        android:background="@drawable/yaokong_bt_selector"
+                        android:text="信源" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

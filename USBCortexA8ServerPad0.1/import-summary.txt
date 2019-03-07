@@ -1,0 +1,331 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea\
+* .idea\workspace.xml
+* app\
+* app\build.gradle
+* app\libs\
+* app\libs\achartengine-1.0.0.jar
+* app\libs\usbseriallibrary.jar
+* app\src\
+* app\src\main\
+* app\src\main\AndroidManifest.xml
+* app\src\main\assets\
+* app\src\main\assets\easyn_p1.apk
+* app\src\main\java\
+* app\src\main\java\com\
+* app\src\main\java\com\click369\
+* app\src\main\java\com\click369\cortex\
+* app\src\main\java\com\click369\cortex\activity\
+* app\src\main\java\com\click369\cortex\activity\AnFangActivity.java
+* app\src\main\java\com\click369\cortex\activity\AutoActivity.java
+* app\src\main\java\com\click369\cortex\activity\CO2Activity.java
+* app\src\main\java\com\click369\cortex\activity\ChuanGanQiActivity.java
+* app\src\main\java\com\click369\cortex\activity\DVDActivity.java
+* app\src\main\java\com\click369\cortex\activity\DataShowActivity.java
+* app\src\main\java\com\click369\cortex\activity\DialogSet.java
+* app\src\main\java\com\click369\cortex\activity\DianJiActivity.java
+* app\src\main\java\com\click369\cortex\activity\DianShiActivity.java
+* app\src\main\java\com\click369\cortex\activity\EnterActivity.java
+* app\src\main\java\com\click369\cortex\activity\GuangZhaoActivity.java
+* app\src\main\java\com\click369\cortex\activity\HongWaiBaoJingActivity.java
+* app\src\main\java\com\click369\cortex\activity\IRActivity.java
+* app\src\main\java\com\click369\cortex\activity\JiaQuanActivity.java
+* app\src\main\java\com\click369\cortex\activity\JianKongActivity.java
+* app\src\main\java\com\click369\cortex\activity\JinJiHuJiaoActivity.java
+* app\src\main\java\com\click369\cortex\activity\KaiGuanLiangKongZhiActivity.java
+* app\src\main\java\com\click369\cortex\activity\KongTiaoActivity.java
+* app\src\main\java\com\click369\cortex\activity\LoginActivity.java
+* app\src\main\java\com\click369\cortex\activity\MenJinActivity.java
+* app\src\main\java\com\click369\cortex\activity\MyScrollView.java
+* app\src\main\java\com\click369\cortex\activity\QiTiActivity.java
+* app\src\main\java\com\click369\cortex\activity\SetActivity.java
+* app\src\main\java\com\click369\cortex\activity\ShengGuangActivity.java
+* app\src\main\java\com\click369\cortex\activity\ShiDuActivity.java
+* app\src\main\java\com\click369\cortex\activity\StartActivity.java
+* app\src\main\java\com\click369\cortex\activity\TRQActivity.java
+* app\src\main\java\com\click369\cortex\activity\WenDuActivity.java
+* app\src\main\java\com\click369\cortex\activity\YaoKongActivity.java
+* app\src\main\java\com\click369\cortex\activity\YinXiangActivity.java
+* app\src\main\java\com\click369\cortex\activity\ZhongLiActivity.java
+* app\src\main\java\com\click369\cortex\service\
+* app\src\main\java\com\click369\cortex\service\ChuangLianService.java
+* app\src\main\java\com\click369\cortex\service\DengGuangService.java
+* app\src\main\java\com\click369\cortex\service\HuJiaoService.java
+* app\src\main\java\com\click369\cortex\service\MainWifiService.java
+* app\src\main\java\com\click369\cortex\service\MainZigBeeService.java
+* app\src\main\java\com\click369\cortex\service\ShengGuangService.java
+* app\src\main\java\com\click369\cortex\util\
+* app\src\main\java\com\click369\cortex\util\AChartView.java
+* app\src\main\java\com\click369\cortex\util\NowTime.java
+* app\src\main\java\com\click369\cortex\util\SavePerfrence.java
+* app\src\main\java\com\click369\cortex\util\Util.java
+* app\src\main\res\
+* app\src\main\res\drawable-hdpi\
+* app\src\main\res\drawable-hdpi\all_bg.jpg
+* app\src\main\res\drawable-hdpi\all_bg_1.png
+* app\src\main\res\drawable-hdpi\auto.png
+* app\src\main\res\drawable-hdpi\blank.png
+* app\src\main\res\drawable-hdpi\button_bg.9.png
+* app\src\main\res\drawable-hdpi\chuanglian.jpg
+* app\src\main\res\drawable-hdpi\desgin_bt_normal.9.png
+* app\src\main\res\drawable-hdpi\desgin_bt_pressed.9.png
+* app\src\main\res\drawable-hdpi\design_dj.png
+* app\src\main\res\drawable-hdpi\design_icon_off.png
+* app\src\main\res\drawable-hdpi\design_icon_on.png
+* app\src\main\res\drawable-hdpi\design_jl.png
+* app\src\main\res\drawable-hdpi\design_toggle_off.png
+* app\src\main\res\drawable-hdpi\design_toggle_on.png
+* app\src\main\res\drawable-hdpi\dianji.png
+* app\src\main\res\drawable-hdpi\dianshi.png
+* app\src\main\res\drawable-hdpi\dianshi_bottom.jpg
+* app\src\main\res\drawable-hdpi\dianshi_bottom_1.jpg
+* app\src\main\res\drawable-hdpi\dianshi_left.jpg
+* app\src\main\res\drawable-hdpi\dianshi_left_1.jpg
+* app\src\main\res\drawable-hdpi\dianshi_right.jpg
+* app\src\main\res\drawable-hdpi\dianshi_right_1.jpg
+* app\src\main\res\drawable-hdpi\dianshi_top.jpg
+* app\src\main\res\drawable-hdpi\dianshi_top_1.jpg
+* app\src\main\res\drawable-hdpi\dvd.png
+* app\src\main\res\drawable-hdpi\first_settings_normal.png
+* app\src\main\res\drawable-hdpi\first_settings_pressed.png
+* app\src\main\res\drawable-hdpi\firstpage_button_bg.9.png
+* app\src\main\res\drawable-hdpi\firstpage_button_bg_pressed.9.png
+* app\src\main\res\drawable-hdpi\gps_height_bg.png
+* app\src\main\res\drawable-hdpi\gps_zhizhen.png
+* app\src\main\res\drawable-hdpi\hongwai.png
+* app\src\main\res\drawable-hdpi\ic_launcher.png
+* app\src\main\res\drawable-hdpi\input_bg.9.png
+* app\src\main\res\drawable-hdpi\jiasudu.png
+* app\src\main\res\drawable-hdpi\kaiguanliang.png
+* app\src\main\res\drawable-hdpi\kongtiao.png
+* app\src\main\res\drawable-hdpi\kongtiao_switch.png
+* app\src\main\res\drawable-hdpi\kongtiao_switch_pressed.png
+* app\src\main\res\drawable-hdpi\light.png
+* app\src\main\res\drawable-hdpi\light_off.png
+* app\src\main\res\drawable-hdpi\light_on.png
+* app\src\main\res\drawable-hdpi\little_bg.9.png
+* app\src\main\res\drawable-hdpi\lock_off.png
+* app\src\main\res\drawable-hdpi\lock_on.png
+* app\src\main\res\drawable-hdpi\login_icon.png
+* app\src\main\res\drawable-hdpi\logo.png
+* app\src\main\res\drawable-hdpi\main_bg.9.png
+* app\src\main\res\drawable-hdpi\main_bg_blue.png
+* app\src\main\res\drawable-hdpi\main_bg_blue_pressed.png
+* app\src\main\res\drawable-hdpi\main_bg_green.png
+* app\src\main\res\drawable-hdpi\main_bg_green_pressed.png
+* app\src\main\res\drawable-hdpi\main_bg_lightblue.png
+* app\src\main\res\drawable-hdpi\main_bg_lightblue_pressed.png
+* app\src\main\res\drawable-hdpi\main_bg_orange.png
+* app\src\main\res\drawable-hdpi\main_bg_orange_pressed.png
+* app\src\main\res\drawable-hdpi\main_bg_pressed.9.png
+* app\src\main\res\drawable-hdpi\main_bg_red.png
+* app\src\main\res\drawable-hdpi\main_bg_red_pressed.png
+* app\src\main\res\drawable-hdpi\main_bg_yellow.png
+* app\src\main\res\drawable-hdpi\main_bg_yellow_pressed.png
+* app\src\main\res\drawable-hdpi\main_every_bg.9.png
+* app\src\main\res\drawable-hdpi\main_every_bg_1.png
+* app\src\main\res\drawable-hdpi\main_every_bg_pressed.9.png
+* app\src\main\res\drawable-hdpi\main_yanwu.png
+* app\src\main\res\drawable-hdpi\map_pop.9.png
+* app\src\main\res\drawable-hdpi\menjin.png
+* app\src\main\res\drawable-hdpi\pass_icon.png
+* app\src\main\res\drawable-hdpi\pin_red.png
+* app\src\main\res\drawable-hdpi\pop.png
+* app\src\main\res\drawable-hdpi\popup.png
+* app\src\main\res\drawable-hdpi\set_bg.png
+* app\src\main\res\drawable-hdpi\set_spinner_down_bg.png
+* app\src\main\res\drawable-hdpi\shexiangtou.png
+* app\src\main\res\drawable-hdpi\shidu.png
+* app\src\main\res\drawable-hdpi\tablebg.png
+* app\src\main\res\drawable-hdpi\thermometer_00.png
+* app\src\main\res\drawable-hdpi\thermometer_01.png
+* app\src\main\res\drawable-hdpi\tianranqi.png
+* app\src\main\res\drawable-hdpi\title_bg.9.png
+* app\src\main\res\drawable-hdpi\titlebar.png
+* app\src\main\res\drawable-hdpi\trq_bg.png
+* app\src\main\res\drawable-hdpi\wendu.png
+* app\src\main\res\drawable-hdpi\wendu_add.png
+* app\src\main\res\drawable-hdpi\wendu_addtop.png
+* app\src\main\res\drawable-hdpi\xianshi_bg.9.png
+* app\src\main\res\drawable-hdpi\yaokong_bg.9.png
+* app\src\main\res\drawable-hdpi\yaokong_btn_nor.9.png
+* app\src\main\res\drawable-hdpi\yaokong_btn_pre.9.png
+* app\src\main\res\drawable-hdpi\yinxiang.png
+* app\src\main\res\drawable-hdpi\zhonglijiasudu.png
+* app\src\main\res\drawable-mdpi\
+* app\src\main\res\drawable-mdpi\ic_launcher.png
+* app\src\main\res\drawable-mdpi\shuidi_1.png
+* app\src\main\res\drawable-mdpi\shuidi_10.png
+* app\src\main\res\drawable-mdpi\shuidi_11.png
+* app\src\main\res\drawable-mdpi\shuidi_12.png
+* app\src\main\res\drawable-mdpi\shuidi_2.png
+* app\src\main\res\drawable-mdpi\shuidi_3.png
+* app\src\main\res\drawable-mdpi\shuidi_4.png
+* app\src\main\res\drawable-mdpi\shuidi_5.png
+* app\src\main\res\drawable-mdpi\shuidi_6.png
+* app\src\main\res\drawable-mdpi\shuidi_7.png
+* app\src\main\res\drawable-mdpi\shuidi_8.png
+* app\src\main\res\drawable-mdpi\shuidi_9.png
+* app\src\main\res\drawable-xhdpi\
+* app\src\main\res\drawable-xhdpi\dj_ac.png
+* app\src\main\res\drawable-xhdpi\gz_bg0.png
+* app\src\main\res\drawable-xhdpi\gz_bg1.png
+* app\src\main\res\drawable-xhdpi\gz_bg10.png
+* app\src\main\res\drawable-xhdpi\gz_bg11.png
+* app\src\main\res\drawable-xhdpi\gz_bg12.png
+* app\src\main\res\drawable-xhdpi\gz_bg2.png
+* app\src\main\res\drawable-xhdpi\gz_bg3.png
+* app\src\main\res\drawable-xhdpi\gz_bg4.png
+* app\src\main\res\drawable-xhdpi\gz_bg5.png
+* app\src\main\res\drawable-xhdpi\gz_bg6.png
+* app\src\main\res\drawable-xhdpi\gz_bg7.png
+* app\src\main\res\drawable-xhdpi\gz_bg8.png
+* app\src\main\res\drawable-xhdpi\gz_bg9.png
+* app\src\main\res\drawable-xhdpi\gz_fangzi.png
+* app\src\main\res\drawable-xhdpi\ic_launcher.png
+* app\src\main\res\drawable-xhdpi\png_ir.png
+* app\src\main\res\drawable-xhdpi\png_light.png
+* app\src\main\res\drawable-xhdpi\shidu_0.png
+* app\src\main\res\drawable-xhdpi\shidu_1.png
+* app\src\main\res\drawable-xhdpi\shidu_10.png
+* app\src\main\res\drawable-xhdpi\shidu_2.png
+* app\src\main\res\drawable-xhdpi\shidu_3.png
+* app\src\main\res\drawable-xhdpi\shidu_4.png
+* app\src\main\res\drawable-xhdpi\shidu_5.png
+* app\src\main\res\drawable-xhdpi\shidu_6.png
+* app\src\main\res\drawable-xhdpi\shidu_7.png
+* app\src\main\res\drawable-xhdpi\shidu_8.png
+* app\src\main\res\drawable-xhdpi\shidu_9.png
+* app\src\main\res\drawable-xxhdpi\
+* app\src\main\res\drawable-xxhdpi\ic_launcher.png
+* app\src\main\res\drawable\
+* app\src\main\res\drawable\blue_bt_selector.xml
+* app\src\main\res\drawable\bt_selector.xml
+* app\src\main\res\drawable\design_bt_selector.xml
+* app\src\main\res\drawable\dianshi_bt_bottom.xml
+* app\src\main\res\drawable\dianshi_bt_left.xml
+* app\src\main\res\drawable\dianshi_bt_right.xml
+* app\src\main\res\drawable\dianshi_bt_top.xml
+* app\src\main\res\drawable\first_bt_selector.xml
+* app\src\main\res\drawable\green_bt_selector.xml
+* app\src\main\res\drawable\kongtiao_switch_bt_selector.xml
+* app\src\main\res\drawable\lightblue_bt_selector.xml
+* app\src\main\res\drawable\orange_bt_selector.xml
+* app\src\main\res\drawable\progress_color_vertical.xml
+* app\src\main\res\drawable\red_bt_selector.xml
+* app\src\main\res\drawable\set_bt_selector.xml
+* app\src\main\res\drawable\shengguangbaojing.png
+* app\src\main\res\drawable\start_bt_selector.xml
+* app\src\main\res\drawable\yaokong_bt_selector.xml
+* app\src\main\res\drawable\yellow_bt_selector.xml
+* app\src\main\res\layout\
+* app\src\main\res\layout\activity_anfang.xml
+* app\src\main\res\layout\activity_autokongzhi.xml
+* app\src\main\res\layout\activity_chuanganqi.xml
+* app\src\main\res\layout\activity_co2.xml
+* app\src\main\res\layout\activity_datashow.xml
+* app\src\main\res\layout\activity_dianshi.xml
+* app\src\main\res\layout\activity_dvd.xml
+* app\src\main\res\layout\activity_enter.xml
+* app\src\main\res\layout\activity_guangzhao.xml
+* app\src\main\res\layout\activity_hongwaibaojing.xml
+* app\src\main\res\layout\activity_ircontrol.xml
+* app\src\main\res\layout\activity_jiankong.xml
+* app\src\main\res\layout\activity_jiaozhiliu.xml
+* app\src\main\res\layout\activity_jiaquan.xml
+* app\src\main\res\layout\activity_jinjihujiao.xml
+* app\src\main\res\layout\activity_kaiguanliangkongzhi.xml
+* app\src\main\res\layout\activity_kongtiao.xml
+* app\src\main\res\layout\activity_login.xml
+* app\src\main\res\layout\activity_menjin.xml
+* app\src\main\res\layout\activity_qt.xml
+* app\src\main\res\layout\activity_setpage.xml
+* app\src\main\res\layout\activity_shengguang.xml
+* app\src\main\res\layout\activity_shidu.xml
+* app\src\main\res\layout\activity_start.xml
+* app\src\main\res\layout\activity_trq.xml
+* app\src\main\res\layout\activity_wendu.xml
+* app\src\main\res\layout\activity_yaokong.xml
+* app\src\main\res\layout\activity_yinxiang.xml
+* app\src\main\res\layout\activity_zhongli.xml
+* app\src\main\res\layout\dialog_setting.xml
+* app\src\main\res\layout\list_item.xml
+* app\src\main\res\menu\
+* app\src\main\res\menu\main.xml
+* app\src\main\res\values-sw600dp\
+* app\src\main\res\values-sw600dp\dimens.xml
+* app\src\main\res\values-sw720dp-land\
+* app\src\main\res\values-sw720dp-land\dimens.xml
+* app\src\main\res\values-v11\
+* app\src\main\res\values-v11\styles.xml
+* app\src\main\res\values-v14\
+* app\src\main\res\values-v14\styles.xml
+* app\src\main\res\values\
+* app\src\main\res\values\colors.xml
+* app\src\main\res\values\dialogstyles.xml
+* app\src\main\res\values\dimens.xml
+* app\src\main\res\values\strings.xml
+* app\src\main\res\values\styles.xml
+* app\src\main\res\xml\
+* app\src\main\res\xml\device_filter.xml
+* build.gradle
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* ic_launcher-web.png
+* proguard-project.txt
+* settings.gradle
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* dianshi_bottom.JPG => dianshi_bottom.jpg
+* dianshi_left.JPG => dianshi_left.jpg
+* dianshi_right.JPG => dianshi_right.jpg
+* dianshi_top.JPG => dianshi_top.jpg
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\achartengine-1.0.0.jar => app\libs\achartengine-1.0.0.jar
+* libs\usbseriallibrary.jar => app\libs\usbseriallibrary.jar
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

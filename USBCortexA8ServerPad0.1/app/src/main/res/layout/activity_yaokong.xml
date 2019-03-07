@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebar" >
+		
+        <TextView
+            android:id="@+id/yaokong_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="设备控制"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+        <Button
+            android:id="@+id/yaokong_btn_lookdata"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="   查看数据    "
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bt_selector"
+            android:layout_gravity="right|top|center_vertical"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        
+        >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+             <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal" >
+                 
+                 <FrameLayout
+                    android:id="@+id/yaokong_dianyuan_fl"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/orange_bt_selector" >
+					
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="电源照明控制"
+                        android:textColor="#000000" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/yaokong_dianyuan_imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/png_light" />
+                    </LinearLayout>
+                </FrameLayout>
+                 
+                <FrameLayout
+                        android:id="@+id/yaokong_dianji_fl"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/red_bt_selector" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="直流交流电机控制"
+                            android:textColor="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/yaokong_dianji_ImageView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/dj_ac" />
+                        </LinearLayout>
+                 </FrameLayout>
+                 <FrameLayout
+                    android:id="@+id/yaokong_kongtiao_fl"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/blue_bt_selector" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="空调控制"
+                        android:textColor="#000000" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/yaokong_kongtiao_imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/kongtiao" />
+                    </LinearLayout>
+                </FrameLayout>
+                 
+                </LinearLayout>
+<!--  
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <FrameLayout
+                        android:id="@+id/yaokong_bingxiang_fl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/blue_bt_selector" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="智能窗帘"
+                            android:textColor="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/yaokong_bingxiang_imageView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/chuanglian" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    
+                </LinearLayout>
+--> 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal" >
+					 <FrameLayout
+	                    android:id="@+id/yaokong_dianshiji_fl"
+	                    android:layout_width="0dp"
+	                    android:layout_weight="1"
+	                    android:layout_height="match_parent"
+	                    android:background="@drawable/red_bt_selector" >
+						
+	                    <TextView
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center_horizontal"
+	                        android:layout_marginTop="10dp"
+	                        android:text="彩电控制"
+	                        android:textColor="#000000" />
+	
+	                    <LinearLayout
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center"
+	                        android:layout_marginTop="10dp"
+	                        android:orientation="vertical" >
+	
+	                        <ImageView
+	                            android:id="@+id/yaokong_dianshiji_imageView"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="match_parent"
+	                            android:layout_marginBottom="20dp"
+	                            android:layout_marginTop="20dp"
+	                            android:src="@drawable/dianshi" />
+	                    </LinearLayout>
+	                </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/yaokong_dvd_fl"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="180dp"
+                        android:background="@drawable/blue_bt_selector" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="DVD控制"
+                            android:textColor="#000000" />
+						
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/yaokong_dvd_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/dvd" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/yaokong_yinxiang_fl"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/orange_bt_selector" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="音箱控制"
+                            android:textColor="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/yaokong_yinxiang_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="120dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/yinxiang" />
+                        </LinearLayout>
+                    </FrameLayout>
+                     
+                </LinearLayout>
+               <!-- 红外 -->
+                <FrameLayout
+                    android:id="@+id/yaokong_IR_fl"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/lightblue_bt_selector" >
+					
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="红外控制"
+                        android:textColor="#000000" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+						
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/auto" />
+                    </LinearLayout>
+                </FrameLayout>
+               <!-- 
+                 
+                 <FrameLayout
+                    android:id="@+id/yaokong_auto_fl"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/lightblue_bt_selector" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="自动调节"
+                        android:textColor="#000000" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/auto" />
+                    </LinearLayout>
+                </FrameLayout>
+                 -->
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

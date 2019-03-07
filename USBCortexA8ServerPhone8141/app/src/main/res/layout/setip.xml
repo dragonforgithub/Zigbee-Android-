@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout_chonghzi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/main_bg_blue">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置IP"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:textSize="7pt"/>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP："
+                android:textColor="#000000"
+                android:layout_marginRight="10dp"
+                android:textSize="7pt"/>
+            <EditText android:layout_width="180dp"
+                  android:layout_height="45dp"
+                  android:inputType="number"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:text="192.168.1.102"
+                  android:id="@+id/setip_edittext"
+                  android:textSize="7pt"/>             
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:id="@+id/setip_queding"
+                android:background="@drawable/bt_selector"
+                android:layout_marginRight="20dp"
+                android:textSize="7pt"/>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:id="@+id/setip_quxiao"
+                android:background="@drawable/bt_selector"
+                android:layout_marginLeft="20dp"
+                android:textSize="7pt"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</FrameLayout>     

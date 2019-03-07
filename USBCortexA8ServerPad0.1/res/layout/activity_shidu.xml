@@ -1,0 +1,160 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg"
+    tools:context=".StartActivity" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/main_every_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="湿度采集"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="10pt" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="250dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/main_every_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/shidu_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="3dp"
+            android:text="当前湿度："
+            android:textColor="#ffffff"
+            android:textSize="7pt" />
+
+        <ImageView
+            android:id="@+id/shidu_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/shidu_10" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="250dp"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="80dp"
+    android:layout_marginLeft="160dp"
+    android:background="@drawable/main_every_bg"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="-3dp"
+                android:background="@drawable/tablebg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="时间"
+                    android:textColor="#ffffff" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-3dp"
+                android:background="@drawable/tablebg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="湿度"
+                    android:textColor="#ffffff" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/shidu_listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/shidu_back"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bt_selector"
+        android:text="返回" />
+
+    <LinearLayout
+        android:id="@+id/shidu_line_ll"
+        android:layout_width="355dp"
+        android:layout_height="250dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/main_every_bg"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <!-- <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/shidu_addr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网内地址："
+            android:textColor="#ffffff"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/shidu_netNum_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络号："
+            android:textColor="#ffffff"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/shidu_singelNum_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信道号："
+            android:textColor="#ffffff"
+            android:textSize="6pt" />
+    </LinearLayout> -->
+
+</FrameLayout>
